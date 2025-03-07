@@ -3,14 +3,27 @@ body{
 }
 
 @font-face {
+    font-family: chopin;
+    src: url(tipografia/Chopin-Light.ttf);
+}
+@font-face {
+    font-family: eight;
+    src: url(tipografia/Eight\ One.ttf);
+}
+@font-face {
     font-family: higman;
     src: url(tipografia/Highman\ Trial.otf);
 }
+@font-face {
+    font-family: munich;
+    src: url(tipografia/MUNICH\ SANS.ttf);
+}
+
 
 /*------------------Header--------------------*/
 .header {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #000000;
+    font-family: munich;
+    background-color: black;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -29,7 +42,7 @@ body{
 }
 
 .header .logo img:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 .header .navLinks {
@@ -39,21 +52,7 @@ body{
 .header .navLinks li {
     margin-top: 30px;
     display: inline-block;
-    padding: 0 30px;
-}
-
-.header .navLinks a {
-    font-size: 17;
-    color: white;
-    text-decoration: none;
-}
-
-.header .navLinks li:hover {
-    transform: scale(1.1);
-}
-
-.header .navLinks li a:hover {
-    color:grey;
+    padding: 0 0px;
 }
 .imgInicio{
     width: 100%;
@@ -64,16 +63,8 @@ body{
     width: 100%;
     height: 50px;
 }
-#acercaDe{
-    width: auto;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.419);
-    font-family: higman;
-    letter-spacing: 10px;
-    margin-top: 20px;
-}
 .h1{
-    padding-top: 15px;
+    padding: 20px;
     justify-content: center;
 }
 #divTexto {
@@ -89,10 +80,11 @@ body{
     width: auto;
     height: 70px;
     background-color: rgba(255, 255, 255, 0.419);
-    font-family: higman;
+    font-family: munich;
     margin-top: 30px;
 }
 .h3{
+    margin-top: 20px;
     padding-top: 25px;
     justify-content: center;
 }
@@ -100,15 +92,95 @@ body{
     width: auto;
     height: 70px;
     background-color: rgba(255, 255, 255, 0.419);
-    font-family: higman;
+    font-family: munich;
     letter-spacing: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 #skills{
+    display:flexbox;
     font-size: x-large;
-    font-family: higman;
-    margin-top: 30px;
-    margin-top: 30px;
+    font-family: chopin;;
     height: 200px;
     background-color: rgba(255, 255, 255, 0.419);
 }
+.tituloIcono{
+    font-size: x-large;
+    margin-top: 20px;
+}
+
+
+.divRss {
+    margin-top: 20px;
+    font-family: Futura;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .rss {
+    margin-inline: 30px;
+    width: 20px;
+    height: 20px;
+  }
+  .icono{
+
+    width: 70px;
+  }
+
+
+
+  .header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .navLinks {
+    list-style: none;
+}
+
+.header .navLinks li {
+    margin-right: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header .navLinks a {
+    font-size: 17;
+    color: white;
+    text-decoration: none;
+}
+
+.header .navLinks li:hover {
+    transform: scale(1.3);
+}
+
+.header .navLinks li a:hover {
+    color: rgb(14, 149, 183);
+}
+
+
+-------------
+
+.row .col img {
+    height: 50px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.row .col img:hover {
+    transform: scale(1.5);
+}
+
+
+
+
